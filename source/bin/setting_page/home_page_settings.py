@@ -4,9 +4,13 @@ DEVICE_PAGE_SELECTOR = 'body > app-root > div > div > rz-super-portal > div > ma
 PAGE_TWO = 'body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-catalog-paginator > app-paginator > div > ul > li:nth-child(2) > a'
 PAGE_THREE = 'body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-catalog-paginator > app-paginator > div > ul > li:nth-child(3) > a'
 
+
 def GET_DEVICE_TV_SELECTOR()-> str:
     return DEVICE_TV_SELECTOR
 
+def GET_DEVICE_TITLE(x) -> str:
+    DEVICE_TITLE = f"body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-grid > ul > li:nth-child({x}) > rz-catalog-tile > app-goods-tile-default > div > div.goods-tile__inner > a.goods-tile__heading.ng-star-inserted > span"
+    return DEVICE_TITLE
 
 def GET_DEVICE_PAGE_SELECTOR()->str:
     return DEVICE_PAGE_SELECTOR

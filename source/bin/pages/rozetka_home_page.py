@@ -3,7 +3,7 @@ import time
 from source.settings import ROZETKA_URL
 from selenium.webdriver.common.by import By
 from source.settings import USER_MAIL, USER_PASS
-from source.bin.setting_page.home_page_settings import GET_DEVICE_TV_SELECTOR, GET_DEVICE_PAGE_SELECTOR,GET_PAGE_2,GET_PAGE_3
+from source.bin.setting_page.home_page_settings import GET_DEVICE_TV_SELECTOR, GET_DEVICE_PAGE_SELECTOR,GET_PAGE_2,GET_PAGE_3,GET_DEVICE_TITLE
 
 
 class Home_Page:
@@ -30,8 +30,7 @@ class Home_Page:
         try:
             file = open("device_name.txt", 'a')
             for i in range(1, 61):
-                DEVICE_TITLE = f"body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-grid > ul > li:nth-child({i}) > rz-catalog-tile > app-goods-tile-default > div > div.goods-tile__inner > a.goods-tile__heading.ng-star-inserted > span"
-                selector = self.driver.find_element(By.CSS_SELECTOR, DEVICE_TITLE)
+                selector = self.driver.find_element(By.CSS_SELECTOR, GET_DEVICE_TITLE(i))
                 name = selector.text
                 file.write(name+'\n')
         finally:
