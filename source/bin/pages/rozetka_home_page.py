@@ -10,7 +10,6 @@ from source.bin.setting_page.home_page_settings import GET_DEVICE_TV_SELECTOR, G
 class Home_Page(Device_Page):
 
     def __init__(self, driver):
-        super().__init__(driver)
         self.driver = driver
 
     def open_rozetka_main_page(self):
