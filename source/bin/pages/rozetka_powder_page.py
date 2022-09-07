@@ -21,25 +21,25 @@ class Powder_Home_Page:
         file.close()
 
     def open_powder_catalog(self):
-        hhp_button = self.driver.find_element(By.CSS_SELECTOR, GET_HOUSEHOLD_PRODUCTS_PAGE())
+        hhp_button = self.driver.find_element(By.CSS_SELECTOR, GET_HOUSEHOLD_PRODUCTS_PAGE)
         hhp_button.click()
-        wash = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE())
+        wash = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE)
         wash.click()
 
     def open_second_page_catalog(self):
-        page2 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_TWO())
+        page2 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_TWO)
         page2.click()
 
     def open_third_page_catalog(self):
-        page3 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_THREE())
+        page3 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_THREE)
         page3.click()
 
     def open_four_page_catalog(self):
-        page4 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_FOUR())
+        page4 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_FOUR)
         page4.click()
 
     def open_five_page_catalog(self):
-        page5 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_FIVE())
+        page5 = self.driver.find_element(By.CSS_SELECTOR, GET_WASHING_POWDER_PAGE_FIVE)
         page5.click()
 
     def write_name_and_price_to_file(self):

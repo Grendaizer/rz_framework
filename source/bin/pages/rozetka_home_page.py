@@ -16,7 +16,7 @@ class Home_Page(Device_Page):
         self.driver.get(ROZETKA_URL)
 
     def select_page_with_device(self):
-        catalog = self.driver.find_element(By.CSS_SELECTOR, GET_DEVICE_TV_SELECTOR())
+        catalog = self.driver.find_element(By.CSS_SELECTOR, GET_DEVICE_TV_SELECTOR)
         catalog.click()
-        device_page = self.driver.find_element(By.CSS_SELECTOR, GET_DEVICE_PAGE_SELECTOR())
+        device_page = self.driver.find_element(By.CSS_SELECTOR, GET_DEVICE_PAGE_SELECTOR)
         device_page.click()
