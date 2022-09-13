@@ -24,7 +24,7 @@ class Device_Page:
         page.click()
 
     def GET_DEVICE_TITLE(self, x) -> str:
-        DEVICE_TITLE = f"body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-grid > ul > li:nth-child({x}) > rz-catalog-tile > app-goods-tile-default > div > div.goods-tile__inner > a.goods-tile__heading.ng-star-inserted > span"
+        DEVICE_TITLE = f"body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > section > rz-grid > ul > li:nth-child({str(x)}) > rz-catalog-tile > app-goods-tile-default > div > div.goods-tile__inner > a.goods-tile__heading.ng-star-inserted > span"
         return DEVICE_TITLE
 
     @property
