@@ -1,4 +1,3 @@
-import time
 from source.settings import ROZETKA_URL
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
